@@ -1,0 +1,26 @@
+﻿# OS / OneDrive
+Thumbs.db
+desktop.ini
+*.lnk
+**/.DS_Store
+OneDrive*/
+.ntuser*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env*
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors
+.vscode/
+.idea/
+
+# Logs & artifacts
+*.log
+output_images/
+pdf2htmlEX/
