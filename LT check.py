@@ -12,7 +12,7 @@ os.chdir(script_dir)
 
 
 #SO (Could be pulled from supbase)
-SO = pd.read_csv("open sales orders.csv",encoding='utf-8')
+SO = pd.read_csv("Data/open sales orders.csv",encoding='utf-8', encoding_errors="ignore")
 SO = SO.drop(columns=["Qty"], axis =1)
 SO.rename(columns={"Date":"Order Date","Num":"QB Num","Backordered":"Qty(-)"},inplace=True)
 SO = SO.drop(SO.columns[[0]], axis =1)
@@ -32,7 +32,7 @@ columns = ['Order Date','Ship Date', 'QB Num',"P. O. #","Name",'Qty(+)','Qty(-)'
 
 
 #POD
-pod = pd.read_csv("open purchase orders.csv",encoding='utf-8')
+pod = pd.read_csv("Data/open purchase orders.csv",encoding='utf-8', encoding_errors="ignore")
 pod = pod.drop(columns=['Name','Amount','Open Balance',"Rcv'd","Qty"], axis =1)
 pod.rename(columns={"Date":"Order Date","Num":"QB Num","Source Name":"Name","Backordered":"Qty(+)"},inplace=True)
 pod = pod.drop(pod.columns[[0]], axis =1)
@@ -50,7 +50,7 @@ pod['Deliv Date'] = pod['Deliv Date'].dt.strftime('%Y/%m/%d')
 pod.to_csv('open purchase2.csv',index=False)
 
 #NAV
-NAV = pd.read_csv("Sales Date return platform.csv",usecols=['Document No.',"Customer PO No.","Customer Ordering Model","OP Estimated Shipping Date","Quantity","No.","Customer Ordering Desc."],encoding='utf-8')
+NAV = pd.read_csv("Data/Sales Date return platform.csv",usecols=['Document No.',"Customer PO No.","Customer Ordering Model","OP Estimated Shipping Date","Quantity","No.","Customer Ordering Desc."],encoding='utf-8')
 NAV.rename(columns={"Customer PO No.":"QB Num","Customer Ordering Model":"Item",'Document No.':"Remark","OP Estimated Shipping Date":"Ship Date","Quantity":"Qty(+)"},inplace=True)
 NAV['QB Num'] = NAV['QB Num'].str.split('(',expand=True)[0]
 NAV.to_csv('NAV1.csv',index=False)
@@ -94,7 +94,7 @@ for i in range(0,len(result_lists)):
 # 轉換後的 list
 transformed_lists = []
 
-## 3. Normalize and expand quantities
+## 3.Normalize and expand quantities
 # 迭代原始 list
 for result_list in result_lists:
     # 複製原始 list進行修改
