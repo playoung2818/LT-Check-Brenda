@@ -8,7 +8,7 @@ flowchart TD
     Q4["Q4: If sales want to pull in a SO,<br/>what is the earliest date we can give?"]
 
     Ready["✅ SO can be assigned LT"]
-    NoCommit["❌ Cannot commit date (no POD)"]
+    NoCommit["❌ Taipei place POD"]
     Assign["📅 Assign ETA +7 as commitment date"]
 
     Q1 -->|Yes| Ready
