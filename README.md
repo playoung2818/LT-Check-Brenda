@@ -7,7 +7,7 @@ flowchart TD
     Q3["Q3: When will the short item arrive? [By Item]"]
     Q4["Q4: If sales want to pull in a SO,<br/>what is the earliest date we can give?"]
 
-    Ready["✅ SO is Ready to Ship"]
+    Ready["✅ SO can be assigned LT"]
     NoCommit["❌ Cannot commit date (no POD)"]
     Assign["📅 Assign ETA +7 as commitment date"]
 
