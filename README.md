@@ -17,3 +17,4 @@ flowchart TD
     Q2 -->|No| NoCommit
     Q3 --> Q4
     Q4 --> Assign
+    Taipei --> Q3
