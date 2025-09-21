@@ -3,7 +3,7 @@
 ```mermaid
 flowchart TD
     Q1["Q1: Does the SO have <br/> every item in stock?<br/> [By SO]"]
-    Q2["Q2: Does the short item have a POD? [By Item]"]
+    Q2["Q2: Does the short <br/> item have a POD? [By Item]"]
     Q3["Q3: When will the short item arrive? [By Item]"]
     Q4["Q4: If sales want to pull in a SO,<br/>what is the earliest date we can give?"]
 
