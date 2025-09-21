@@ -9,7 +9,7 @@ flowchart TD
 
     Ready["✅ SO is Ready to Ship"]
     NoCommit["❌ Cannot commit date (no POD)"]
-    Assign["📅 Assign ETA as commitment date"]
+    Assign["📅 Assign ETA +7 as commitment date"]
 
     Q1 -->|Yes| Ready
     Q1 -->|No| Q2
