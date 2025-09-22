@@ -22,9 +22,9 @@ pip install -r requirements.txt
 ## ⚙️ Installation
    Clone the repository and install the required packages:
    ```bash
-   git clone https://github.com/your-repository/quickbook-inventory-log.git
-   cd quickbook-inventory-log
-   pip install -r requirements.txt
+   git clone https://github.com/playoung2818/LT-Check-Brenda.git
+   cd LT-Check-Brenda
+
 
 ```
 ---
