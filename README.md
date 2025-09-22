@@ -1,3 +1,33 @@
+# LT-Check-Brenda
+
+A Python-based tool for **lead time assignment** and **supply chain planning**.  
+This project integrates data from QuickBooks, NAV, and Excel exports to automate the process of checking work orders (WO), purchase orders (PO), and vendor lead times.
+
+---
+
+## 📦 Requirements
+
+- **Python**: 3.10 or later  
+- **Package Manager**: `pip` (or `conda` if you prefer)
+
+### Python Libraries
+
+Install dependencies with:
+
+```bash
+pip install -r requirements.txt
+
+
+## Installation
+   Clone the repository and install the required packages:
+   ```bash
+   git clone https://github.com/your-repository/quickbook-inventory-log.git
+   cd quickbook-inventory-log
+   pip install -r requirements.txt
+
+
+
+
 # SO Fulfillment Decision Tree
 
 ```mermaid
